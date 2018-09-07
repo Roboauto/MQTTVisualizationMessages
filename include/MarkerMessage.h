@@ -27,31 +27,31 @@ namespace MQTTVisualizationMsgs {
   };
 
   struct MarkerMsg {
-    int sequence_id;
-    std::string frame_id;
-    unsigned time_stamp;
+    int sequence_id = 0;
+    std::string frame_id = "map";
+    unsigned time_stamp = 0;
 
-    std::string name_space;
+    std::string name_space = "";
 
-    int id;
-    int type;
-    int action;
+    int id = 0;
+    int type = 0;
+    int action = 0;
 
-    PoseXYZ position; //position
-    Orientation orientation; //quaternion
-    Scale scale;
-    Color color;
+    PoseXYZ position{}; //position
+    Orientation orientation{}; //quaternion
+    Scale scale{};
+    Color color{};
 
-    double lifetime;
+    double lifetime = 0;
 
-    bool frame_locked;
+    bool frame_locked = false;
 
     std::vector<PoseXYZ> points;
     std::vector<Color> colors;
 
-    std::string text;
-    std::string mesh_resource;
-    bool mesh_use_embedded_materials;
+    std::string text = "";
+    std::string mesh_resource = "";
+    bool mesh_use_embedded_materials = false;
 
     MSGPACK_DEFINE (sequence_id, frame_id, time_stamp, name_space, id, type, action, position, orientation, scale,
                     color, lifetime, frame_locked, points, colors, text, mesh_resource, mesh_use_embedded_materials)

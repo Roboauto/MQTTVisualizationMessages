@@ -11,10 +11,10 @@ namespace MQTTVisualizationMsgs {
     };
 
     struct Image {
-        unsigned int width;
-        unsigned int height;
+        unsigned int width = 0;
+        unsigned int height = 0;
 
-        unsigned char pxlFormat;
+        unsigned char pxlFormat = 0;
 
         std::vector<unsigned char> data;
 

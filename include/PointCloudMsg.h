@@ -10,10 +10,10 @@ namespace MQTTVisualizationMsgs {
     typedef std::pair<std::string, std::vector<float>> Channel;
 
     struct PointCloudMsg {
-        std::string frame_id;
-        unsigned time_stamp;
+        std::string frame_id = "map";
+        unsigned time_stamp = 0;
 
-        std::string name_space;
+        std::string name_space = "";
 
         std::vector< PoseXYZ > points;
         std::vector< Channel > channels;
