@@ -5,7 +5,7 @@
 namespace MQTTVisualizationMsgs {
     struct PoseXYZ{
         PoseXYZ() = default;
-        PoseXYZ(const float x, const float y, const float z) : x(x), y(y), z(z) {}
+        PoseXYZ(const float x_, const float y_, const float z_) : x(x_), y(y_), z(z_) {}
 
         float x, y, z;
 
@@ -14,7 +14,7 @@ namespace MQTTVisualizationMsgs {
 
     struct PoseXYZI{
         PoseXYZI() = default;
-        PoseXYZI(const float x, const float y, const float z, const float w) : x(x), y(y), z(z), i(w) {}
+        PoseXYZI(const float x_, const float y_, const float z_, const float w_) : x(x_), y(y_), z(z_), i(w_) {}
 
         float x, y, z, i;
 
@@ -23,7 +23,7 @@ namespace MQTTVisualizationMsgs {
 
     struct Scale{
         Scale() = default;
-        Scale(const float x, const float y, const float z) : x(x), y(y), z(z) {}
+        Scale(const float x_, const float y_, const float z_) : x(x_), y(y_), z(z_) {}
 
         float x=0.1, y=0.1, z=0.1;
 
@@ -32,7 +32,7 @@ namespace MQTTVisualizationMsgs {
 
     struct Color{
         Color() = default;
-        Color(const float r, const float g, const float b, const float a) : r(r), g(g), b(b), a(a) {}
+        Color(const float r_, const float g_, const float b_, const float a_) : r(r_), g(g_), b(b_), a(a_) {}
 
         float r=1,g=1,b=1,a=1;
 
@@ -41,7 +41,7 @@ namespace MQTTVisualizationMsgs {
 
     struct Orientation{
         Orientation() = default;
-        Orientation(const float x, const float y, const float z, const float w) : x(x), y(y), z(z), w(w) {}
+        Orientation(const float x_, const float y_, const float z_, const float w_) : x(x_), y(y_), z(z_), w(w_) {}
 
         float x=0,y=0,z=0,w=1.0;
 
