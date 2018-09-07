@@ -28,10 +28,10 @@ namespace MQTTVisualizationMsgs {
 
   struct MarkerMsg {
     int sequence_id = 0;
-    std::string frame_id = "map";
+    std::string frame_id{"map"};
     unsigned time_stamp = 0;
 
-    std::string name_space = "";
+    std::string name_space{""};
 
     int id = 0;
     int type = 0;
@@ -46,11 +46,11 @@ namespace MQTTVisualizationMsgs {
 
     bool frame_locked = false;
 
-    std::vector<PoseXYZ> points;
-    std::vector<Color> colors;
+    std::vector<PoseXYZ> points{};
+    std::vector<Color> colors{};
 
-    std::string text = "";
-    std::string mesh_resource = "";
+    std::string text{""};
+    std::string mesh_resource{""};
     bool mesh_use_embedded_materials = false;
 
     MSGPACK_DEFINE (sequence_id, frame_id, time_stamp, name_space, id, type, action, position, orientation, scale,

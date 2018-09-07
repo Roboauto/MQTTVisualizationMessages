@@ -16,7 +16,7 @@ namespace MQTTVisualizationMsgs {
 
         unsigned char pxlFormat = 0;
 
-        std::vector<unsigned char> data;
+        std::vector<unsigned char> data{};
 
         MSGPACK_DEFINE(width, height, pxlFormat, data)
     };
