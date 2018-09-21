@@ -51,11 +51,12 @@ namespace MQTTVisualizationMsgs {
     struct Properties{
     public:
         Properties() = default;
-        Properties(Color color, Scale scale, std::string frame, Orientation orientation={0,0,0,1}) :
+        Properties(Color color, Scale scale, std::string frame, Orientation orientation={0,0,0,1}, int id=0) :
                 color_(color),
                 scale_(scale),
                 orientation_(orientation),
-                frame_(std::move(frame))
+                frame_(std::move(frame)),
+                id_(id)
         {
 
         }
@@ -64,5 +65,6 @@ namespace MQTTVisualizationMsgs {
         Scale scale_{};
         Orientation orientation_{};
         std::string frame_ = "map";
+        int id_;
     };
 }
