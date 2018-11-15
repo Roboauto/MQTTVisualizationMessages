@@ -10,7 +10,7 @@
 #include "Types.h"
 
 
-namespace MQTTVisualizationMsgs {
+namespace MQTTVisualizationMessages {
   enum MarkerType {
     ARROW = 0,
     CUBE,

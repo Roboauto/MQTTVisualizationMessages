@@ -4,7 +4,7 @@
 
 #include <msgpack.hpp>
 
-namespace MQTTVisualizationMsgs {
+namespace MQTTVisualizationMessages {
     enum PxlFormat {
         RGB,
         RGBA

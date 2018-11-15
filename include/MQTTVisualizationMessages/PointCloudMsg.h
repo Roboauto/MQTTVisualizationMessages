@@ -5,7 +5,7 @@
 
 #include "Types.h"
 
-namespace MQTTVisualizationMsgs {
+namespace MQTTVisualizationMessages {
 
     typedef std::pair<std::string, std::vector<float>> Channel;
 
