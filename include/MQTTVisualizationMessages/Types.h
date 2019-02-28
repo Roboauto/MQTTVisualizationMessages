@@ -3,6 +3,12 @@
 #include <msgpack.hpp>
 
 namespace MQTTVisualizationMessages {
+    enum Action {
+        ADD = 0,
+        DELETE = 2,
+        DELETE_ALL = 3
+    };
+
     struct PoseXYZ{
         PoseXYZ() = default;
         PoseXYZ(const float x_, const float y_, const float z_) : x(x_), y(y_), z(z_) {}
