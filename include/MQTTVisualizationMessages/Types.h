@@ -71,6 +71,6 @@ namespace MQTTVisualizationMessages {
         Scale scale_{};
         Orientation orientation_{};
         std::string frame_ = "map";
-        int id_;
+        int id_{0};
     };
 }
