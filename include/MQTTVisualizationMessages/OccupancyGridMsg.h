@@ -5,7 +5,7 @@
 
 namespace MQTTVisualizationMessages {
 
-    struct OccupancyGrid {
+    struct OccupancyGridMsg {
 
         std::string frame_id{"map"};
         unsigned time_stamp = 0;
