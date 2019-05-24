@@ -15,8 +15,9 @@ namespace MQTTVisualizationMessages {
         size_t height{};                  // cells
         std::vector<int8_t> data{};
 
-        RoboCore::Math::Vector3 pose{};
+        double pose[3] = {0.0, 0.0, 0.0};
+        double orientation[4] = {1.0, 0.0, 0.0, 0.0};
 
-        MSGPACK_DEFINE(frame_id, time_stamp, name_space, resolution, width, height, data, pose)
+        MSGPACK_DEFINE(frame_id, time_stamp, name_space, resolution, width, height, data, pose, orientation)
     };
 }
