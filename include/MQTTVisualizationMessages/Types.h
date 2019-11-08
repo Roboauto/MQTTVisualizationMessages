@@ -4,9 +4,9 @@
 
 namespace MQTTVisualizationMessages {
     enum Action {
-        ADD = 0,
-        DELETE = 2,
-        DELETE_ALL = 3
+        Add = 0,
+        Delete = 2,
+        Delete_All = 3
     };
 
     struct PoseXYZ{
