@@ -1,16 +1,23 @@
 #pragma once
 
-#include <vector>
+#include "Time.h"
 
+#include <vector>
 #include <msgpack.hpp>
 
-namespace MQTTVisualizationMessages {
+namespace MQTTVisualizationMessages2 {
     enum PxlFormat {
         RGB,
         RGBA
     };
 
     struct Image {
+        static constexpr const char* typeName = "Image";
+
+        int sequence_id = 0;
+        std::string frame{};
+        Time time{};
+
         unsigned int width = 0;
         unsigned int height = 0;
 
