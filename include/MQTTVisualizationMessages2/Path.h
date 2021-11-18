@@ -8,7 +8,7 @@
 namespace MQTTVisualizationMessages2 {
 
     struct Path {
-        static constexpr const char* typeName = "Path";
+        static constexpr const char* typeName = "nav_msgs/Path";
 
         int sequence_id = 0;
         std::string frame{};

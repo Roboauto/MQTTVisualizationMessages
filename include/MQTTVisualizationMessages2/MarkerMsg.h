@@ -35,7 +35,7 @@ namespace MQTTVisualizationMessages2 {
     };
 
     struct MarkerMsg {
-        static constexpr const char* typeName = "MarkerMsg";
+        static constexpr const char* typeName = "visualization_msgs/Marker";
 
         int sequence_id = 0;
         std::string frame{};
@@ -68,7 +68,7 @@ namespace MQTTVisualizationMessages2 {
     };
 
     struct MarkerArrayMsg {
-        static constexpr const char* typeName = "MarkerArrayMsg";
+        static constexpr const char* typeName = "visualization_msgs/MarkerArray";
         std::vector<MarkerMsg> markers;
         MSGPACK_DEFINE(markers)
     };

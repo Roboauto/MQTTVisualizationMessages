@@ -8,7 +8,7 @@
 namespace MQTTVisualizationMessages2 {
 
     struct OccupancyGridMsg {
-        static constexpr const char* typeName = "OccupancyGridMsg";
+        static constexpr const char* typeName = "nav_msgs/OccupancyGrid";
 
         int sequence_id = 0;
         std::string frame{};

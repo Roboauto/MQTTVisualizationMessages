@@ -12,7 +12,7 @@ namespace MQTTVisualizationMessages2 {
     };
 
     struct Image {
-        static constexpr const char* typeName = "Image";
+        static constexpr const char* typeName = "sensor_msgs/Image";
 
         int sequence_id = 0;
         std::string frame{};

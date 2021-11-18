@@ -10,7 +10,7 @@ namespace MQTTVisualizationMessages2 {
     typedef std::pair<std::string, std::vector<float>> Channel;
 
     struct PointCloudMsg {
-        static constexpr const char* typeName = "PointCloudMsg";
+        static constexpr const char* typeName = "sensor_msgs/PointCloud";
 
         int sequence_id = 0;
         std::string frame{};
